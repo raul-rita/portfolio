@@ -1,19 +1,14 @@
-import About from "./components/About";
-import { Hero } from "./components/Hero";
+import Hero from "./sections/Hero";
 import Navigation from "./components/Navigation";
-import { PageContainer } from "./components/PageContainer/styled";
-import Skills from "./components/Skills";
-
+import Skills from "./sections/Skills";
 
 function App() {
   return (
-    <PageContainer>
+    <>
       <Navigation />
       <Hero />
-      <About />
       <Skills />
-    </PageContainer>
-
+    </>
   );
 }
 

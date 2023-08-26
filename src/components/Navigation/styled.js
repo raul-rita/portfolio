@@ -1,29 +1,29 @@
 import styled from 'styled-components'
 
 export const NavigationBar = styled.div `
-    background-color: #00124550;
+    background-color: var(--primary-color);
     display: flex;
     width: 100%;
-    height: 48px;
+    height: 3rem;
     justify-content: center;
     align-items: center;
     position: fixed;
 
     ul {
         display: flex;
-        gap: 16px;
+        gap: 1rem;
         list-style: none;
     }
 
     li a{
         text-decoration: none;
-        color: #D9B70D;
+        color: var(--second-color);
         font-weight: 700;
         transition: .5s;
     }
 
     li a:hover {          
-        color: #BEE0ED;
+        color: var(--primary-color-light);
     }
 
     @media screen and (max-width: 768px) {  

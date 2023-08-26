@@ -1,26 +1,26 @@
 import { styled } from "styled-components";
-import hero from "../../images/hero-bg.jpg"
+import hero from "/imagens/hero-bg.jpg"
 
 export const HeroSection = styled.section`
     height: 100vh;
     width: 100%;
-    background: #001245 url(${hero}) no-repeat top center;
+    background: url(${hero}) no-repeat top center;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 56px;
+    padding: 0 3.5rem;
     
     p {
-        color: #BEE0ED;
+        color: var(--primary-color-light);
         font-size: 16px;              
     }
 
     @media screen and (max-width: 768px) {       
         flex-direction: column;
-        gap: 24px;
+        gap: 1.5rem;
         justify-content: flex-end;
-        padding: 32px;
+        padding: 2rem;
     }
 `
 
@@ -33,7 +33,7 @@ export const PresentationContainer = styled.div`
 
     h1 {             
         font-weight: 700;
-        font-size: 48px;        
+        font-size: 3rem;        
         margin: 0;
         padding: 0;        
     }
@@ -49,22 +49,10 @@ export const ContactContainer = styled.div`
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    gap: 16px;
-
+    gap: 1rem;  
+    
     ul {
         display: flex;
-        gap: 40px;
-
-        a i {
-            font-size: 40px;
-            color: #D9B70D;
-            cursor: pointer;
-            transition: .5s;
-        }
-
-        a i:hover {
-            color: #BEE0ED;
-        }
+        gap: 1rem;
     }
-
 `

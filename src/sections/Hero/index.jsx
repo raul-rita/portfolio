@@ -1,7 +1,10 @@
+import EmailIcon from "../../components/Icons/contact/EmailIcon"
+import GithubIcon from "../../components/Icons/contact/GithubIcon"
+import LinkedinIcon from "../../components/Icons/contact/LinkedinIcon"
+import WhatsappIcon from "../../components/Icons/contact/WhatsappIcon"
 import { HeroSection, ContactContainer, PresentationContainer } from "./styled"
 
-
-export const Hero = () => {
+export default function Hero() {
     return (
         <HeroSection id="hero">
             <PresentationContainer>
@@ -13,16 +16,16 @@ export const Hero = () => {
                 <p>Entre em contato:</p>
                 <ul>
                     <a href="https://www.linkedin.com/in/raul-rita/" target="_blank" rel="noreferrer">
-                        <i class="bi bi-linkedin"></i>
+                        <LinkedinIcon />
                     </a>
                     <a href="https://github.com/raul-rita" target="_blank" rel="noreferrer">
-                        <i class="bi bi-github"></i>
+                        <GithubIcon />
                     </a>
                     <a href="https://wa.me/5516997632363" target="_blank" rel="noreferrer">
-                        <i class="bi bi-whatsapp"></i>  
+                        <WhatsappIcon />
                     </a>
-                    <a href="https://drive.google.com/file/d/1BThxMr3eqNfEsj4-4iEppZc1sp37vGzQ/view?usp=drive_link" target="_blank" rel="noreferrer">
-                        <i class="bi bi-file-earmark-text"></i>
+                    <a href="mailto:raul.vinicius@live.com" target="_blank" rel="noreferrer">
+                        <EmailIcon />
                     </a>
                 </ul>
             </ContactContainer>

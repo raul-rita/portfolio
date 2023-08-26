@@ -20,20 +20,19 @@ h1 {
   font-family: boldstrom, sans-serif;
   color: transparent;
   text-transform: uppercase;
-  
-        color: transparent;
-        -webkit-text-stroke-width: .5px;
-        -webkit-text-stroke-color: #D9B70D;
+  color: transparent;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: var(--second-color);
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: .5rem;
 }
 
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: var(--default-dark);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #D9B70D;
+  background: var(--second-color);
 }
